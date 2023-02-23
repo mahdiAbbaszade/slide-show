@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> slidshow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .show {
+            width: 800px;
+            height: 320px;
+            border: 1px solid black;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        ul li {
+            transition: width 1s;
+            list-style: none;
+            float: left;
+            width: 160px;
+        }
+        
+        ul:hover li {
+            width: 40px;
+        }
+        
+        ul li:hover {
+            width: 640px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="show">
+        <ul>
+            <li> <img src="1.jpg" alt="photo1" title="photo1"></li>
+
+            <li> <img src="2.jpg" alt="photo2" title="photo2"></li>
+
+            <li> <img src="3.jpg" alt="photo3" title="photo3"></li>
+
+            <li> <img src="4.jpg" alt="photo4" title="photo4"></li>
+
+            <li> <img src="5.jpg" alt="photo5" title="photo5"></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
